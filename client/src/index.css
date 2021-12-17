@@ -1,0 +1,17 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .input {
+    @apply bg-transparent border-b border-gray-300 py-2 px-2 outline-none focus:border-indigo-700 md:text-lg;
+  }
+  .button {
+    @apply m-2 px-5 py-1 border border-indigo-700 text-indigo-700 font-medium rounded-full hover:text-white hover:bg-indigo-700 transition transform duration-300 ease-out;
+  }
+  
+  .social {
+    @apply h-10 w-10 p-3 bg-gray-200 rounded-lg cursor-pointer hover:bg-indigo-700 hover:text-white transition transform duration-200 ease-out;
+  }
+}
