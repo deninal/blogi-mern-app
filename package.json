@@ -8,10 +8,10 @@
   },
 
   "scripts": {
-    "heroku-prebuild": "export NPM_CONFIG_PRODUCTION=false; export NODE_ENV=; NPM_CONFIG_PRODUCTION=false NODE_ENV=development npm install --only=dev --dev",
+  
     "build": "cd client && npm run build",
     "install-client": "cd client && npm install",
-    "heroku-postbuild": "export NPM_CONFIG_PRODUCTION=true; export NODE_ENV=production; cd client && npm install && npm run build",
+    "heroku-postbuild": "cd client && npm install && npm run build",
     "server": "nodemon index.js",
     "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\"",
     "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\""
@@ -25,11 +25,11 @@
     "mongoose": "^6.0.13",
     "multer": "^1.4.3",
     "nodemon": "^2.0.15",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "concurrently": "^6.5.0"
   },
   "devDependencies": {
-    "concurrently": "^6.5.0",
-    "mongoose": "^6.0.13"
+
   },
   "description": ""
 }
