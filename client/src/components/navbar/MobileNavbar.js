@@ -5,7 +5,7 @@ import NavItem from "./NavItem";
 
 function MobileNavbar() {
   const {user} = useContext(Context)
-  const PublicFolder = "http://localhost:5000/images/";
+  const PublicFolder = "https://blogi-mern-app.herokuapp.com/images/";
   
   return (
     <div className="md:hidden bg-white px-5 py-8 space-y-3 text-2xl">

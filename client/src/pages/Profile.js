@@ -13,7 +13,7 @@ function Settings() {
   const [password, setPassword] = useState("");
   const [success, setSuccess] = useState(false);
 
-  const PublicFolder = "http://localhost:5000/images/";
+  const PublicFolder = "https://blogi-mern-app.herokuapp.com/images/";
 
   const handleUpdate = async (e) => {
     e.preventDefault();

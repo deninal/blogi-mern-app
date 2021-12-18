@@ -5,7 +5,7 @@ import { useLocation } from "react-router";
 
 function Gallery() {
   const [posts, setPosts] = useState([]);
-  const PublicFolder = "http://localhost:5000/images/";
+  const PublicFolder = "https://blogi-mern-app.herokuapp.com/images/";
   const { search } = useLocation();
   useEffect(() => {
     const fetchPosts = async () => {

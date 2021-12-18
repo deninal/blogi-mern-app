@@ -9,7 +9,7 @@ import { Context } from "../../context/Context";
 
 function Navbar() {
   const { user, dispatch } = useContext(Context);
-  const PublicFolder = "http://localhost:5000/images/";
+  const PublicFolder = "https://blogi-mern-app.herokuapp.com/images/";
 
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
