@@ -1,4 +1,4 @@
-# blogi
+# Blogi
 MERN blog app
 https://blogi-mern-app.herokuapp.com/
 
