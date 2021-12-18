@@ -39,27 +39,33 @@ function About() {
               A Professional Publishing Platform
             </h1>
             <p className="mt-5 text-gray-800 text-lg leading-relaxed ">
-              Aenean consectetur massa quis sem volutpat, a condimentum tortor
-              pretium. Cras id ligula consequat, sagittis nulla at, sollicitudin
-              lorem. Orci varius natoque penatibus et magnis dis parturient
-              montes.
+              Blogi is a MERN blogging application with user
+              authentication.
               <br />
-              <br /> Cras id ligula consequat, sagittis nulla at, sollicitudin
-              lorem. Orci varius natoque penatibus et magnis dis parturient
-              montes, nascetur ridiculus mus. Phasellus eleifend, dolor vel
-              condimentum imperdiet. In a professional context it often happens
-              that private or corporate clients corder a publication to be made
-              and presented with the actual content still not being ready.
               <br />
-              <br /> Think of a news blog that’s filled with content hourly on
-              the day of going live. However, reviewers tend to be distracted by
-              comprehensible content, say, a random text copied from a newspaper
-              or the internet. The are likely to focus on the text, disregarding
-              the layout and its elements. <br />
-              <br /> Most text editors like MS Word or Lotus Notes generate
-              random lorem text when needed, either as pre-installed module or
-              plug-in to be added. Word selection or sequence don’t necessarily
-              match the original, which is intended to add variety.
+              In order to write a new blog post, the user has to create and
+              account and login
+              <br />
+              <br /> The front-end of the app is build using React, React
+              Router, Tailwind.css and some Framer Motion animations.
+              <br />
+              <br />
+              The backend is written in express, and it has been deployed using
+              Heroku's free tier and the Mongodb Atlas's cloud service is used
+              for the database service.
+              <br />
+              <br />
+              Axios is used to interface with the API, and React context for
+              state management.
+              <br />
+              <br />
+              Additionally it uses CKEditor as a rich text editor for writting
+              posts which support some basic features like bold, italic,
+              hyperlinks, blockquotes or undo/redo changes.
+              <br />
+              <br />
+              While the design is pretty responsive, many elements need further
+              improvements in the next version.
             </p>
           </div>
           {/* Right side / Sidebar */}
