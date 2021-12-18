@@ -9,13 +9,12 @@ import { useLocation } from "react-router";
 import { motion } from "framer-motion";
 import { Carousel } from "3d-react-carousal";
 import Header from "../components/header/Header";
-import { Skeleton } from "@mui/material";
 
 function Home() {
   const { user } = useContext(Context);
   const [cats, setCats] = useState([]);
   // const [users, setUsers] = useState([]);
-  const PublicFolder = "http://localhost:5000/images/";
+  const PublicFolder = "https://blogi-mern-app.herokuapp.com/images/";
 
   useEffect(() => {
     const getCats = async () => {

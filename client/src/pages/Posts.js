@@ -1,5 +1,4 @@
 import {  useEffect, useState } from "react";
-
 import PostCard from "../components/posts/PostCard";
 import Sidebar from "../components/sidebar/Sidebar";
 import axios from "axios";
@@ -10,7 +9,7 @@ import { motion } from "framer-motion";
 function Posts() {
   const [posts, setPosts] = useState([]);
   const [cats, setCats] = useState([]);
-  const PublicFolder = "http://localhost:5000/images/";
+  const PublicFolder = "https://blogi-mern-app.herokuapp.com/images/";
 
   const { search } = useLocation();
   useEffect(() => {
